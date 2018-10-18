@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Departamentos_AW
 {
-    public partial class Form1 : Form
+    public partial class CrearDepartamentos : Form
     {
-        public Form1()
+        public CrearDepartamentos()
         {
             InitializeComponent();
-        }
-
-        private void btnListar_Click(object sender, EventArgs e)
-        {
-            ListarDepartamentos vista = new ListarDepartamentos();
-            vista.Show();
-
         }
     }
 }
