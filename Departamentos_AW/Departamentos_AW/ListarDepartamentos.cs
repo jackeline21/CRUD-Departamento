@@ -25,7 +25,6 @@ namespace Departamentos_AW
             // Crear conexion 
             string connString = @"Server = localhost; Database=AdventureWorks2014; User Id=Jacki; 
                                     Password=12345;";
-            // Integrated Security = true;
 
             // Query 
             string sql = @"SELECT TOP(1000) [DepartmentID],[Name],[GroupName],[ModifiedDate]
