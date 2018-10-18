@@ -46,16 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar.Designer.cs">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearDepartamentos.Designer.cs">
+      <DependentUpon>CrearDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eliminar.Designer.cs">
+      <DependentUpon>Eliminar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListarDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarDepartamentos.Designer.cs">
+      <DependentUpon>ListarDepartamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Actualizar.resx">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearDepartamentos.resx">
+      <DependentUpon>CrearDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar.resx">
+      <DependentUpon>Eliminar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarDepartamentos.resx">
+      <DependentUpon>ListarDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +114,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Querys Stored Procedures\Actualizarsql.sql" />
+    <Content Include="Querys Stored Procedures\eliminar.sql" />
+    <Content Include="Querys Stored Procedures\Insert_Deptos.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

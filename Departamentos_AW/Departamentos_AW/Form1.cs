@@ -16,5 +16,30 @@ namespace Departamentos_AW
         {
             InitializeComponent();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            ListarDepartamentos vista = new ListarDepartamentos();
+            vista.Show();
+
+        }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            CrearDepartamentos vista = new CrearDepartamentos();
+            vista.Show();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            Actualizar vista = new Actualizar();
+            vista.Show();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Eliminar vista = new Eliminar();
+            vista.Show();
+        }
     }
 }
