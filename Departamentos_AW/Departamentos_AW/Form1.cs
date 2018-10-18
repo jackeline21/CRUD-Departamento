@@ -23,5 +23,23 @@ namespace Departamentos_AW
             vista.Show();
 
         }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            CrearDepartamentos vista = new CrearDepartamentos();
+            vista.Show();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            Actualizar vista = new Actualizar();
+            vista.Show();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            Eliminar vista = new Eliminar();
+            vista.Show();
+        }
     }
 }
